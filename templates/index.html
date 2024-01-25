@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris Species Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #84799ea6;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f2f8f6a6;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        p {
+            font-size: 50px;
+            font-weight: bold;
+            color: #ff1e00;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iris Species Prediction By Gujuri Alekha</h1>
+    <form action="/predict" method="post">
+        <label for="sepal_length">Sepal Length (cm):</label>
+        <input type="text" id="sepal_length" name="sepal_length" placeholder="Approximately 4.3 to 7.9 cm" required><br><br>
+        <label for="sepal_width">Sepal Width (cm):</label>
+        <input type="text" id="sepal_width" name="sepal_width" placeholder="Approximately 2.0 to 4.4 cm" required><br><br>
+        <label for="petal_length">Petal Length (cm):</label>
+        <input type="text" id="petal_length" name="petal_length" placeholder="Approximately 1.0 to 6.9 cm" required><br><br>
+        <label for="petal_width">Petal Width (cm):</label>
+        <input type="text" id="petal_width" name="petal_width" placeholder="Approximately 0.1 to 2.5 cm" required><br><br>
+        <input type="submit" value="Predict">
+    </form>
+    {% if prediction %}
+    <p>{{ prediction }}</p>
+    {% endif %}
+</body>
+</html>
