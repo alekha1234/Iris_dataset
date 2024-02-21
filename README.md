@@ -1,6 +1,6 @@
 <div align='center'>
 
-<img src=https://github.com/alekha1234/Iris_dataset/blob/main/templates/iris_flower.png alt="logo" width= height= />
+<img src=https://github.com/alekha1234/Iris_dataset/blob/main/templates/iris_flower.png alt="logo" width=800 height=350 />
 
 <h1>IRIS Flower Classification</h1>
 <p>The IRIS data science project focuses on the analysis and classification of IRIS flowers based on their distinct features. This project utilizes the renowned IRIS dataset, a classic dataset in the field of machine learning, to predict the species of IRIS flowers accurately.</p>
